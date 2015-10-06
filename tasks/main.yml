@@ -1,0 +1,18 @@
+---
+# tasks file for mainwp-crons
+- name: configure (cron) jobs
+  cron:
+    name: "{{ item.0.name }}-{{ item.1.name }}"
+    job: "wget -O /dev/null {{ item.0.url }}{{ item.1.path }} > /dev/null 2>&1"   
+    state: "{{ item.0.state | default('present') }}"
+    day: "{{ item.1.day | default('*') }}"
+    hour: "{{ item.1.hour | default('*') }}"
+    minute: "{{ item.1.minute | default('*') }}"
+    month: "{{ item.1.month | default('*') }}"
+    weekday: "{{ item.1.weekday | default('*') }}"
+    cron_file: mainwp
+    user: root
+  with_nested:
+    - mainwp_crons_sites
+    - mainwp_crons_jobs
+  tags: [configuration, mainwp-crons]
