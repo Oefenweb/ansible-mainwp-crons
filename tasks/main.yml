@@ -1,5 +1,5 @@
----
 # tasks file for mainwp-crons
+---
 - name: configure (cron) jobs
   cron:
     name: "{{ item.0.name }}-{{ item.1.name }}"
@@ -15,4 +15,6 @@
   with_nested:
     - mainwp_crons_sites
     - mainwp_crons_jobs
-  tags: [configuration, mainwp-crons]
+  tags:
+    - configuration
+    - mainwp-crons

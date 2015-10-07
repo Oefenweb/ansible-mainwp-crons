@@ -7,4 +7,4 @@
   vars:
     mainwp_crons_sites:
       - name: site
-        url: http://localhost
+        url: 'http://localhost'

@@ -3,9 +3,9 @@
 galaxy_info:
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
-  description: Manage MainWP cronjobs in Debian-like systems
+  description: Manage cron jobs related to MainWP
   license: MIT
-  min_ansible_version: 1.6
+  min_ansible_version: 1.4
   platforms:
     - name: Ubuntu
       versions:
@@ -19,5 +19,5 @@ galaxy_info:
         - jessie
   categories:
     - system
-    - monitoring
+    - web
 dependencies: []

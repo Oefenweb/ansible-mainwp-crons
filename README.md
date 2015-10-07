@@ -1,8 +1,8 @@
 ## mainwp-crons
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-mainwp-crons.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-mainwp-crons)
+[![Build Status](https://travis-ci.org/Oefenweb/ansible-mainwp-crons.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-mainwp-crons) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-mainwp--crons-blue.svg)](https://galaxy.ansible.com/list#/roles/5399)
 
-Manage MainWP cronjobs in Debian-like systems.
+Manage [cron jobs](http://docs.mainwp.com/disable-wp-cron/) related to [MainWP](https://mainwp.com/).
 
 #### Requirements
 
