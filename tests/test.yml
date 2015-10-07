@@ -1,0 +1,10 @@
+# test file for mainwp-crons
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - ../../
+  vars:
+    mainwp_crons_sites:
+      - name: site
+        url: 'http://localhost'

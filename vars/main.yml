@@ -1,0 +1,33 @@
+# vars file for mainwp-crons
+---
+mainwp_crons_jobs:
+  - name: updatescheck
+    path: '/wp-content/plugins/mainwp/cron/updatescheck.php' 
+    minute: '*/15'
+    user: root
+  - name: offlinecheck
+    path: '/wp-content/plugins/mainwp/cron/offlinecheck.php'   
+    minute: '*/15'
+    user: root
+  - name: backups_continue
+    path: '/wp-content/plugins/mainwp/cron/backups_continue.php'   
+    minute: '*/15'
+    user: root
+  - name: stats
+    path: '/wp-content/plugins/mainwp/cron/stats.php'   
+    minute: 0
+    user: root
+  - name: backups
+    path: '/wp-content/plugins/mainwp/cron/backups.php'   
+    minute: 0
+    user: root
+  - name: conflicts
+    path: '/wp-content/plugins/mainwp/cron/conflicts.php'   
+    minute: 0
+    hour: '*/12'
+    user: root
+  - name: pingchilds
+    path: '/wp-content/plugins/mainwp/cron/pingchilds.php'   
+    minute: 0
+    hour: 0
+    user: root

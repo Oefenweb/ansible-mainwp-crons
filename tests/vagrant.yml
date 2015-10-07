@@ -1,0 +1,11 @@
+# test file for mainwp-crons
+---
+- hosts: all
+  remote_user: vagrant
+  sudo: true
+  roles:
+    - ../../
+  vars:
+    mainwp_crons_sites:
+      - name: site
+        url: 'http://localhost'
