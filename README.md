@@ -6,7 +6,9 @@ Manage [cron jobs](http://docs.mainwp.com/disable-wp-cron/) related to [MainWP](
 
 #### Requirements
 
-None
+#### Requirements
+
+* `wget` (will be not installed)
 
 #### Variables
 

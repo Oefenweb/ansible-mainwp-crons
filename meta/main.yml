@@ -1,6 +1,7 @@
 # meta file for mainwp-crons
 ---
 galaxy_info:
+  role_name: mainwp-crons
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
   description: Manage cron jobs related to MainWP
@@ -12,10 +13,12 @@ galaxy_info:
         - precise
         - trusty
         - xenial
+        - bionic
     - name: Debian
       versions:
         - wheezy
         - jessie
+        - stretch
   galaxy_tags:
     - system
     - web
