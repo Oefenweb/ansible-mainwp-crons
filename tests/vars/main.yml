@@ -1,0 +1,5 @@
+# vars file for mainwp-crons
+---
+mainwp_crons_sites:
+  - name: site
+    url: 'http://localhost'

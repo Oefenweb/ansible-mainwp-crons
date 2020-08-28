@@ -3,9 +3,8 @@
 - hosts: all
   remote_user: vagrant
   become: true
+  pre_tasks:
+    - name: include vars
+      include_vars: main.yml
   roles:
     - ../../
-  vars:
-    mainwp_crons_sites:
-      - name: site
-        url: 'http://localhost'
