@@ -1,4 +1,4 @@
-# vars file for mainwp-crons
+# vars file
 ---
 mainwp_crons_jobs:
   - name: updatescheck

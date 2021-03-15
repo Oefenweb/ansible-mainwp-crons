@@ -1,4 +1,4 @@
-# test file for mainwp-crons
+# test file
 ---
 - hosts: localhost
   connection: local
