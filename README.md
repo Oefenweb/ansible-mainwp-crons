@@ -1,6 +1,7 @@
 ## mainwp-crons
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-mainwp-crons.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-mainwp-crons) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-mainwp--crons-blue.svg)](https://galaxy.ansible.com/Oefenweb/mainwp-crons)
+[![CI](https://github.com/Oefenweb/ansible-mainwp-crons/workflows/CI/badge.svg)](https://github.com/Oefenweb/ansible-mainwp-crons/actions?query=workflow%3ACI)
+[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-mainwp--crons-blue.svg)](https://galaxy.ansible.com/Oefenweb/mainwp_crons)
 
 Manage [cron jobs](http://docs.mainwp.com/disable-wp-cron/) related to [MainWP](https://mainwp.com/).
 
