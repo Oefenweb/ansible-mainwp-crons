@@ -1,7 +1,7 @@
 # tasks file
 ---
-- name: configure (cron) jobs
-  cron:
+- name: configure (cron) jobs  # noqa args[module]
+  ansible.builtin.cron:
     name: "{{ item.0.name }}-{{ item.1.name }}"
     job: "wget -O /dev/null {{ item.0.url }}{{ item.1.path }} > /dev/null 2>&1"
     state: "{{ item.0.state | default('present') }}"
