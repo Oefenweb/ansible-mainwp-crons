@@ -30,7 +30,7 @@ None
 ---
 - hosts: all
   roles:
-    - mainwp-crons
+    - oefenweb.mainwp-crons
   vars:
     mainwp_crons_sites:
       - name: site
